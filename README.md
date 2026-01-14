@@ -94,14 +94,6 @@ Access everything through a clean sidebar interface:
 ![Windows Mode](screenshots/windows-mode.png)
 *Switch between open windows with live previews*
 
-### Theme Variations
-<div align="center">
-
-| Dark Theme | Light Theme | Custom Theme |
-|------------|-------------|--------------|
-| ![Dark](screenshots/theme-dark.png) | ![Light](screenshots/theme-light.png) | ![Custom](screenshots/theme-custom.png) |
-
-</div>
 
 > **📸 Want to contribute screenshots?** We'd love to see your setup! Please submit screenshots via [pull request](https://github.com/Rudrakshsingh07/better-rofi/pulls) or [open an issue](https://github.com/Rudrakshsingh07/better-rofi/issues) with your images.
 
@@ -490,7 +482,7 @@ If this config made your workflow better, consider:
 
 **Made with ❤️ for the Linux community**
 
-[![GitHub](https://img.shields.io/badge/GitHub-YOUR__USERNAME-181717?style=flat&logo=github)](https://github.com/Rudrakshsingh07)
+[![GitHub](https://img.shields.io/badge/GitHub-Rudrakshsingh07-181717?style=flat&logo=github)](https://github.com/Rudrakshsingh07)
 [![Report Bug](https://img.shields.io/badge/Report-Bug-red?style=flat)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 [![Request Feature](https://img.shields.io/badge/Request-Feature-blue?style=flat)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 

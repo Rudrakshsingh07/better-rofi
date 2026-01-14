@@ -5,15 +5,15 @@
 [![The Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg)](LICENSE)
 [![Rofi Version](https://img.shields.io/badge/Rofi-1.7+-orange.svg)](https://github.com/davatorium/rofi)
 [![Linux](https://img.shields.io/badge/Platform-Linux-yellow.svg)](https://www.linux.org/)
-[![Stars](https://img.shields.io/github/stars/YOUR_USERNAME/better-rofi?style=social)](https://github.com/YOUR_USERNAME/better-rofi/stargazers)
+[![Stars](https://img.shields.io/github/stars/Rudrakshsingh07/better-rofi?style=social)](https://github.com/Rudrakshsingh07/better-rofi/stargazers)
 
 **A PowerToys Run-inspired Rofi configuration for Linux power users**
 
 *Transform Rofi into a fast, keyboard-driven launcher with PowerToys-like functionality*
 
-[![Download](https://img.shields.io/badge/Download-Config-success.svg?style=for-the-badge)](https://github.com/YOUR_USERNAME/better-rofi/releases)
+[![Download](https://img.shields.io/badge/Download-Config-success.svg?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/releases)
 [![Documentation](https://img.shields.io/badge/Read-Documentation-blue.svg?style=for-the-badge)](#-installation)
-[![Report Bug](https://img.shields.io/badge/Report-Bug-red.svg?style=for-the-badge)](https://github.com/YOUR_USERNAME/better-rofi/issues)
+[![Report Bug](https://img.shields.io/badge/Report-Bug-red.svg?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 
 </div>
 
@@ -103,7 +103,7 @@ Access everything through a clean sidebar interface:
 
 </div>
 
-> **📸 Want to contribute screenshots?** We'd love to see your setup! Please submit screenshots via [pull request](https://github.com/YOUR_USERNAME/better-rofi/pulls) or [open an issue](https://github.com/YOUR_USERNAME/better-rofi/issues) with your images.
+> **📸 Want to contribute screenshots?** We'd love to see your setup! Please submit screenshots via [pull request](https://github.com/Rudrakshsingh07/better-rofi/pulls) or [open an issue](https://github.com/Rudrakshsingh07/better-rofi/issues) with your images.
 
 ---
 
@@ -154,7 +154,7 @@ rofi -version
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/better-rofi.git
+git clone https://github.com/Rudrakshsingh07/better-rofi.git
 
 # Create Rofi config directory if it doesn't exist
 mkdir -p ~/.config/rofi
@@ -166,7 +166,7 @@ mkdir -p ~/.config/rofi
 cp better-rofi/config.rasi ~/.config/rofi/config.rasi
 ```
 
-[![Clone Repo](https://img.shields.io/badge/Clone-Repository-success?style=flat&logo=git)](https://github.com/YOUR_USERNAME/better-rofi.git)
+[![Clone Repo](https://img.shields.io/badge/Clone-Repository-success?style=flat&logo=git)](https://github.com/Rudrakshsingh07/better-rofi.git)
 
 #### Option B: Manual Install
 
@@ -177,7 +177,7 @@ mkdir -p ~/.config/rofi
 
 2. **Download the config file:**
 
-[![Download Config](https://img.shields.io/badge/Download-config.rasi-blue?style=flat&logo=download)](https://raw.githubusercontent.com/YOUR_USERNAME/better-rofi/main/config.rasi)
+[![Download Config](https://img.shields.io/badge/Download-config.rasi-blue?style=flat&logo=download)](https://raw.githubusercontent.com/Rudrakshsingh07/better-rofi/main/config.rasi)
 
 Save it to `~/.config/rofi/config.rasi`
 
@@ -412,7 +412,7 @@ Rofi supports additional modes like `ssh`, `file-browser`, etc. Add them in the 
 
 </details>
 
-[![Get Help](https://img.shields.io/badge/Get-Help-red?style=for-the-badge)](https://github.com/YOUR_USERNAME/better-rofi/issues)
+[![Get Help](https://img.shields.io/badge/Get-Help-red?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 
 ---
 
@@ -422,9 +422,9 @@ Contributions are welcome! Here's how you can help:
 
 <div align="center">
 
-[![Report Bug](https://img.shields.io/badge/🐛_Report-Bug-red?style=for-the-badge)](https://github.com/YOUR_USERNAME/better-rofi/issues)
-[![Request Feature](https://img.shields.io/badge/💡_Request-Feature-blue?style=for-the-badge)](https://github.com/YOUR_USERNAME/better-rofi/issues)
-[![Submit PR](https://img.shields.io/badge/📝_Submit-Pull_Request-success?style=for-the-badge)](https://github.com/YOUR_USERNAME/better-rofi/pulls)
+[![Report Bug](https://img.shields.io/badge/🐛_Report-Bug-red?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/issues)
+[![Request Feature](https://img.shields.io/badge/💡_Request-Feature-blue?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/issues)
+[![Submit PR](https://img.shields.io/badge/📝_Submit-Pull_Request-success?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/pulls)
 
 </div>
 
@@ -441,7 +441,7 @@ Contributions are welcome! Here's how you can help:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-[![Fork Repo](https://img.shields.io/github/forks/YOUR_USERNAME/better-rofi?style=social)](https://github.com/YOUR_USERNAME/better-rofi/fork)
+[![Fork Repo](https://img.shields.io/github/forks/Rudrakshsingh07/better-rofi?style=social)](https://github.com/Rudrakshsingh07/better-rofi/fork)
 
 ---
 
@@ -479,8 +479,8 @@ If this config made your workflow better, consider:
 
 <div align="center">
 
-[![Star Repo](https://img.shields.io/badge/⭐_Star-This_Repo-yellow?style=for-the-badge)](https://github.com/YOUR_USERNAME/better-rofi)
-[![Share](https://img.shields.io/badge/📢_Share-With_Others-blue?style=for-the-badge)](https://twitter.com/intent/tweet?text=Check%20out%20better-rofi%20-%20A%20PowerToys%20Run-inspired%20Rofi%20config!&url=https://github.com/YOUR_USERNAME/better-rofi)
+[![Star Repo](https://img.shields.io/badge/⭐_Star-This_Repo-yellow?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi)
+[![Share](https://img.shields.io/badge/📢_Share-With_Others-blue?style=for-the-badge)](https://twitter.com/intent/tweet?text=Check%20out%20better-rofi%20-%20A%20PowerToys%20Run-inspired%20Rofi%20config!&url=https://github.com/Rudrakshsingh07/better-rofi)
 
 </div>
 
@@ -490,10 +490,10 @@ If this config made your workflow better, consider:
 
 **Made with ❤️ for the Linux community**
 
-[![GitHub](https://img.shields.io/badge/GitHub-YOUR__USERNAME-181717?style=flat&logo=github)](https://github.com/YOUR_USERNAME)
-[![Report Bug](https://img.shields.io/badge/Report-Bug-red?style=flat)](https://github.com/YOUR_USERNAME/better-rofi/issues)
-[![Request Feature](https://img.shields.io/badge/Request-Feature-blue?style=flat)](https://github.com/YOUR_USERNAME/better-rofi/issues)
+[![GitHub](https://img.shields.io/badge/GitHub-YOUR__USERNAME-181717?style=flat&logo=github)](https://github.com/Rudrakshsingh07)
+[![Report Bug](https://img.shields.io/badge/Report-Bug-red?style=flat)](https://github.com/Rudrakshsingh07/better-rofi/issues)
+[![Request Feature](https://img.shields.io/badge/Request-Feature-blue?style=flat)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=YOUR_USERNAME.better-rofi)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Rudrakshsingh07.better-rofi)
 
 </div>

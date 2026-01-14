@@ -486,6 +486,6 @@ If this config made your workflow better, consider:
 [![Report Bug](https://img.shields.io/badge/Report-Bug-red?style=flat)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 [![Request Feature](https://img.shields.io/badge/Request-Feature-blue?style=flat)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Rudrakshsingh07.better-rofi)
+![Visitors](https://hits.sh/github.com/Rudrakshsingh07/better-rofi.svg?style=flat&label=visitors&color=blue)
 
 </div>

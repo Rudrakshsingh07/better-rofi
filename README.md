@@ -9,7 +9,7 @@
 
 **A PowerToys Run-inspired Rofi configuration for Linux power users**
 
-*Transform Rofi into a fast, keyboard-driven launcher with PowerToys-like functionality*
+*Transform Rofi into a fast, keyboard-driven launcher with PowerToys-like functionality and automatic wallpaper-based theming*
 
 [![Download](https://img.shields.io/badge/Download-Config-success.svg?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/releases)
 [![Documentation](https://img.shields.io/badge/Read-Documentation-blue.svg?style=for-the-badge)](#-installation)
@@ -25,6 +25,7 @@
 - [Features](#-features)
 - [Screenshots](#-screenshots)
 - [Installation](#-installation)
+- [Wallpaper-Based Theming](#-wallpaper-based-theming-matugen)
 - [Usage](#-usage)
 - [Customization](#-customization)
 - [Troubleshooting](#-troubleshooting)
@@ -35,18 +36,20 @@
 
 ## 🎯 Overview
 
-This isn't a new tool - it's a **carefully crafted Rofi configuration** that unlocks Rofi's full potential out of the box. Instead of spending hours tweaking settings, get a production-ready launcher with intelligent defaults and a PowerToys Run-inspired workflow.
+This isn't a new tool - it's a **carefully crafted Rofi configuration** that unlocks Rofi's full potential out of the box. Instead of spending hours tweaking settings, get a production-ready launcher with intelligent defaults, a PowerToys Run-inspired workflow, and **automatic Material You theming driven by your wallpaper**.
 
 <div align="center">
 
 [![PowerToys](https://img.shields.io/badge/Inspired_by-PowerToys_Run-0078D4?style=flat&logo=windows)](https://github.com/microsoft/PowerToys)
 [![Rofi](https://img.shields.io/badge/Built_with-Rofi-FF6C37?style=flat&logo=linux)](https://github.com/davatorium/rofi)
+[![Matugen](https://img.shields.io/badge/Themed_by-Matugen-9c27b0?style=flat)](https://github.com/InioX/matugen)
 
 </div>
 
 ### Perfect for:
 - 🪟 Windows users missing PowerToys Run after switching to Linux
-- ⚡ Linux power users seeking an optimized launcher experience
+- ⚡ Linux power users seeking an optimized launcher experience  
+- 🎨 Rice enthusiasts who want their launcher to match their wallpaper automatically
 - 🚀 Anyone wanting Rofi's power without the configuration headache
 
 ---
@@ -71,12 +74,18 @@ Access everything through a clean sidebar interface:
 - Switch modes with `Alt+Left/Right`
 - Text editing shortcuts (`Ctrl+A`, `Ctrl+Backspace`, etc.)
 
-### 🎨 Visual Polish
+### 🎨 Automatic Wallpaper-Based Theming
+- Powered by **matugen** — generates a full Material Design 3 color palette from your wallpaper
+- Colors update automatically every time your wallpaper changes
+- No manual color picking, ever
+- Works seamlessly with **end-4 dots-hyprland** and any other rice using matugen
+
+### 🖼️ Visual Polish
 - App icons for instant recognition
 - Window thumbnails when switching
-- Hover-to-select mouse support
-- Clean, modern interface
-- Compatible with all Rofi themes
+- Highlighted selection with `primary-container` color from your wallpaper palette
+- Clean search placeholder that disappears as you type
+- Rounded corners and comfortable padding throughout
 
 ---
 
@@ -94,55 +103,29 @@ Access everything through a clean sidebar interface:
 ![Windows Mode](screenshots/windows-mode.png)
 *Switch between open windows with live previews*
 
-
 > **📸 Want to contribute screenshots?** We'd love to see your setup! Please submit screenshots via [pull request](https://github.com/Rudrakshsingh07/better-rofi/pulls) or [open an issue](https://github.com/Rudrakshsingh07/better-rofi/issues) with your images.
 
 ---
 
 ## 🚀 Installation
 
-<div align="center">
-
-[![Quick Install](https://img.shields.io/badge/Quick_Install-One_Command-success?style=for-the-badge)](#step-3-install-better-rofi-configuration)
-[![Manual Install](https://img.shields.io/badge/Manual_Install-Step_by_Step-blue?style=for-the-badge)](#option-b-manual-install)
-
-</div>
-
 ### Step 1: Install Rofi
-
-Choose your distribution:
 
 <div align="center">
 
 | Distribution | Command |
 |--------------|---------|
-| ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white) ![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white) | `sudo apt update && sudo apt install rofi` |
-| ![Arch](https://img.shields.io/badge/Arch-1793D1?style=flat&logo=arch-linux&logoColor=white) ![Manjaro](https://img.shields.io/badge/Manjaro-35BF5C?style=flat&logo=manjaro&logoColor=white) | `sudo pacman -S rofi` |
+| ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white) ![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat&logo=debian&logoColor=white) | `sudo apt install rofi` |
+| ![Arch](https://img.shields.io/badge/Arch-1793D1?style=flat&logo=arch-linux&logoColor=white) | `sudo pacman -S rofi-wayland` |
 | ![Fedora](https://img.shields.io/badge/Fedora-51A2DA?style=flat&logo=fedora&logoColor=white) | `sudo dnf install rofi` |
-| ![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=flat&logo=opensuse&logoColor=white) | `sudo zypper install rofi` |
-| ![Gentoo](https://img.shields.io/badge/Gentoo-54487A?style=flat&logo=gentoo&logoColor=white) | `sudo emerge --ask x11-misc/rofi` |
-| ![NixOS](https://img.shields.io/badge/NixOS-5277C3?style=flat&logo=nixos&logoColor=white) | Add `rofi` to `environment.systemPackages` |
 
 </div>
 
-#### Other Distributions
-[![Rofi GitHub](https://img.shields.io/badge/Build_from-Source-black?style=flat&logo=github)](https://github.com/davatorium/rofi)
+> **Wayland users (Hyprland, Sway):** Use `rofi-wayland` instead of `rofi` for proper Wayland support.
 
 ---
 
-### Step 2: Verify Rofi Installation
-
-```bash
-rofi -version
-```
-
-✅ You should see version information. If not, Rofi isn't properly installed.
-
----
-
-### Step 3: Install better-rofi Configuration
-
-#### Option A: Quick Install (Recommended)
+### Step 2: Install better-rofi Configuration
 
 ```bash
 # Clone the repository
@@ -154,137 +137,100 @@ mkdir -p ~/.config/rofi
 # Backup existing config (if you have one)
 [ -f ~/.config/rofi/config.rasi ] && cp ~/.config/rofi/config.rasi ~/.config/rofi/config.rasi.backup
 
-# Copy the configuration file
+# Copy configuration files
 cp better-rofi/config.rasi ~/.config/rofi/config.rasi
-```
-
-[![Clone Repo](https://img.shields.io/badge/Clone-Repository-success?style=flat&logo=git)](https://github.com/Rudrakshsingh07/better-rofi.git)
-
-#### Option B: Manual Install
-
-1. **Create the config directory:**
-```bash
-mkdir -p ~/.config/rofi
-```
-
-2. **Download the config file:**
-
-[![Download Config](https://img.shields.io/badge/Download-config.rasi-blue?style=flat&logo=download)](https://raw.githubusercontent.com/Rudrakshsingh07/better-rofi/main/config.rasi)
-
-Save it to `~/.config/rofi/config.rasi`
-
-3. **Or create manually:**
-```bash
-nano ~/.config/rofi/config.rasi
-# Paste the config contents and save (Ctrl+X, then Y, then Enter)
+cp better-rofi/theme.rasi ~/.config/rofi/theme.rasi
 ```
 
 ---
 
-### Step 4: Set Up Keyboard Shortcut
+### Step 3: Set Up Keyboard Shortcut
 
-You need to bind a keyboard shortcut to launch Rofi. Choose your desktop environment:
-
-<details>
-<summary><b>🟣 GNOME</b> (Ubuntu, Pop!_OS, Fedora Workstation)</summary>
-
-1. Open **Settings** → **Keyboard** → **Keyboard Shortcuts**
-2. Scroll down and click **"View and Customize Shortcuts"**
-3. Click **"Custom Shortcuts"** at the bottom
-4. Click the **"+"** button to add a new shortcut
-5. Fill in:
-   - **Name:** `Rofi Launcher`
-   - **Command:** `rofi -show drun`
-   - **Shortcut:** Click "Set Shortcut" and press `Alt+Space`
-
-**Note:** You may need to disable the default `Alt+Space` binding first (usually mapped to "Activate the window menu").
-
-[![GNOME Docs](https://img.shields.io/badge/GNOME-Docs-4A86CF?style=flat&logo=gnome)](https://help.gnome.org/users/gnome-help/stable/keyboard-shortcuts-set.html)
-
-</details>
-
-<details>
-<summary><b>🔵 KDE Plasma</b> (Kubuntu, KDE Neon)</summary>
-
-1. Open **System Settings** → **Shortcuts** → **Custom Shortcuts**
-2. Right-click in the panel → **New** → **Global Shortcut** → **Command/URL**
-3. In the **Trigger** tab: Press `Alt+Space`
-4. In the **Action** tab: Enter `rofi -show drun`
-5. Click **Apply**
-
-[![KDE Docs](https://img.shields.io/badge/KDE-Docs-1D99F3?style=flat&logo=kde)](https://docs.kde.org/)
-
-</details>
-
-<details>
-<summary><b>🐭 XFCE</b> (Xubuntu)</summary>
-
-1. Open **Settings** → **Keyboard** → **Application Shortcuts**
-2. Click **"Add"**
-3. Enter command: `rofi -show drun`
-4. Press `Alt+Space` when prompted
-
-[![XFCE Docs](https://img.shields.io/badge/XFCE-Docs-2284F2?style=flat&logo=xfce)](https://docs.xfce.org/)
-
-</details>
-
-<details>
-<summary><b>⌨️ i3 / Sway</b></summary>
-
-Add to your config file (`~/.config/i3/config` or `~/.config/sway/config`):
-
-```bash
-# Launch Rofi
-bindsym $mod+space exec rofi -show drun
+**Hyprland** — add to `~/.config/hypr/hyprland.conf`:
+```ini
+bind = ALT, SPACE, exec, rofi -show drun
 ```
 
-Replace `$mod+space` with your preferred keybind. Reload config with `$mod+Shift+r`.
-
-[![i3 Docs](https://img.shields.io/badge/i3-Docs-000000?style=flat&logo=i3)](https://i3wm.org/docs/)
-[![Sway Docs](https://img.shields.io/badge/Sway-Docs-5294E2?style=flat&logo=wayland)](https://swaywm.org/)
-
-</details>
-
-<details>
-<summary><b>📦 Openbox</b></summary>
-
-Edit `~/.config/openbox/rc.xml` and add:
-
-```xml
-<keybind key="A-space">
-  <action name="Execute">
-    <command>rofi -show drun</command>
-  </action>
-</keybind>
+**i3 / Sway** — add to your config:
+```ini
+bindsym Mod1+space exec rofi -show drun
 ```
-
-Reload with `openbox --reconfigure`.
-
-[![Openbox Docs](https://img.shields.io/badge/Openbox-Docs-grey?style=flat)](http://openbox.org/wiki/Help:Contents)
-
-</details>
-
-<details>
-<summary><b>🔧 Other Window Managers / DEs</b></summary>
-
-Consult your window manager's documentation for setting custom keybindings. The command to run is:
-```bash
-rofi -show drun
-```
-
-</details>
 
 ---
 
-### Step 5: Test It Out!
+### Step 4: Test It Out
 
-[![Test Now](https://img.shields.io/badge/Test-Now-success?style=for-the-badge)](#)
+Press `Alt+Space` — Rofi should appear. Start typing to search for apps.
 
-1. Press `Alt+Space` (or your chosen keybind)
-2. Rofi should appear with the Applications mode
-3. Start typing to search for apps
-4. Use `Alt+Left/Right` to switch between modes
-5. Press `Enter` to launch
+---
+
+## 🎨 Wallpaper-Based Theming (matugen)
+
+better-rofi supports **automatic color generation from your wallpaper** using [matugen](https://github.com/InioX/matugen). Every time your wallpaper changes, Rofi's colors update to match — no manual configuration needed.
+
+### How it works
+
+```
+wallpaper change → matugen runs → generates colors.rasi → rofi reloads with new palette
+```
+
+Matugen analyzes your wallpaper, extracts a Material Design 3 color palette, and writes it to `~/.config/rofi/colors.rasi`. The theme then uses those variables for all UI colors.
+
+### Setup
+
+**1. Install matugen:**
+```bash
+# Arch
+yay -S matugen-bin
+
+# Cargo
+cargo install matugen
+```
+
+**2. Create the matugen rofi template:**
+```bash
+mkdir -p ~/.config/matugen/templates
+```
+
+Create `~/.config/matugen/templates/rofi-colors.rasi`:
+```
+* {
+    primary:              {{colors.primary.default.hex}};
+    on-primary:           {{colors.on_primary.default.hex}};
+    primary-container:    {{colors.primary_container.default.hex}};
+    on-primary-container: {{colors.on_primary_container.default.hex}};
+    secondary:            {{colors.secondary.default.hex}};
+    on-secondary:         {{colors.on_secondary.default.hex}};
+    surface:              {{colors.surface.default.hex}};
+    on-surface:           {{colors.on_surface.default.hex}};
+    surface-variant:      {{colors.surface_variant.default.hex}};
+    on-surface-variant:   {{colors.on_surface_variant.default.hex}};
+    background:           {{colors.background.default.hex}};
+    on-background:        {{colors.on_background.default.hex}};
+}
+```
+
+**3. Register the template in `~/.config/matugen/config.toml`:**
+```toml
+[templates.rofi]
+input_path = '~/.config/matugen/templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/colors.rasi'
+```
+
+**4. Generate colors from your current wallpaper:**
+```bash
+matugen image /path/to/your/wallpaper.jpg
+```
+
+**5. Verify it worked:**
+```bash
+cat ~/.config/rofi/colors.rasi
+# Should show hex color values
+```
+
+From now on, whenever matugen runs (automatically on wallpaper change in supported rices), Rofi's colors will update to match.
+
+> **end-4 dots-hyprland users:** matugen is already wired into your wallpaper pipeline. Just add the template and register it — everything else is automatic.
 
 ---
 
@@ -299,58 +245,58 @@ rofi -show drun
 | `Enter` | Launch selected item |
 | `Esc` | Close Rofi |
 | `Alt+Left` / `Alt+Right` | Switch between modes |
-| `Ctrl+A` | Select all text |
+| `Ctrl+Tab` | Switch to next mode |
+| `Ctrl+A` | Move cursor to start |
+| `Ctrl+E` | Move cursor to end |
 | `Ctrl+Backspace` | Delete word |
-| `Ctrl+U` | Clear input |
 
 ### Modes
 
-**Applications Mode (drun)**
-- Search and launch desktop applications
-- Shows app icons
-- Ranks by usage frequency
+**Applications Mode (drun)** — Search and launch desktop applications with icons and usage-ranked results.
 
-**Run Mode**
-- Execute terminal commands
-- Run scripts
-- Access system utilities
+**Run Mode** — Execute terminal commands and scripts directly.
 
-**Windows Mode**
-- Switch between open windows
-- Shows window previews
-- Quick navigation
+**Windows Mode** — Switch between open windows with live previews.
 
 ---
 
 ## ⚙️ Customization
 
-The config file is organized into clear sections at `~/.config/rofi/config.rasi`:
+### Theme File Structure
 
-[![Edit Config](https://img.shields.io/badge/Edit-Config_File-orange?style=for-the-badge&logo=vim)](~/.config/rofi/config.rasi)
-
-### Change Theme
-Rofi supports many themes. List available themes:
-```bash
-rofi-theme-selector
+```
+~/.config/rofi/
+├── config.rasi       # Main configuration (modes, keybinds, behavior)
+├── theme.rasi        # Visual layout and styling
+└── colors.rasi       # Auto-generated by matugen (do not edit manually)
 ```
 
-[![Browse Themes](https://img.shields.io/badge/Browse-Rofi_Themes-blueviolet?style=flat)](https://github.com/davatorium/rofi-themes)
+### Adjust Sizing
+Edit the `window` block in `theme.rasi`:
+```css
+window {
+    width:   680px;   /* wider = more horizontal space */
+    padding: 16px 20px;
+}
+```
 
-Or edit the config file and modify the theme line.
+Adjust visible results:
+```css
+listview {
+    lines: 6;   /* number of apps shown at once */
+}
+```
 
-### Adjust Appearance
-Edit `~/.config/rofi/config.rasi` and modify:
-- `width` / `height` - Window dimensions
-- `font` - Interface font
-- `icon-theme` - Icon pack to use
+### Change Font
+In `theme.rasi`, update:
+```css
+* {
+    font: "JetBrainsMono Nerd Font 11";
+}
+```
 
-### Modify Keybindings
-Search for the keybinding section in the config and adjust shortcuts to your preference.
-
-### Add More Modes
-Rofi supports additional modes like `ssh`, `file-browser`, etc. Add them in the configuration.
-
-[![Rofi Modi Docs](https://img.shields.io/badge/Learn-Rofi_Modi-informational?style=flat)](https://github.com/davatorium/rofi/wiki)
+### Use Without matugen
+If you don't use matugen, remove the `@import "colors.rasi"` line from `theme.rasi` and define your own colors directly in the `* {}` block at the top of `theme.rasi`.
 
 ---
 
@@ -362,119 +308,73 @@ Rofi supports additional modes like `ssh`, `file-browser`, etc. Add them in the 
 - Verify Rofi is installed: `rofi -version`
 - Test manually: `rofi -show drun`
 - Check if another application is using the same keybind
-- Ensure the keybind was saved correctly in your DE settings
+
+</details>
+
+<details>
+<summary><b>🎨 Colors not updating from wallpaper</b></summary>
+
+- Verify matugen is installed: `matugen --version`
+- Check the template is registered in `~/.config/matugen/config.toml`
+- Run matugen manually: `matugen image /path/to/wallpaper.jpg`
+- Check if `~/.config/rofi/colors.rasi` was created
+
+</details>
+
+<details>
+<summary><b>⚠️ "Error while parsing theme" on startup</b></summary>
+
+- `colors.rasi` may not exist yet — run matugen at least once manually
+- Check that `@import "colors.rasi"` is at the very top of `theme.rasi`, not inside any block
+- Check that `@theme` is outside the `configuration {}` block in `config.rasi`
 
 </details>
 
 <details>
 <summary><b>🖼️ Icons don't appear</b></summary>
 
-- Install an icon theme:
-  ```bash
-  sudo apt install papirus-icon-theme  # Ubuntu/Debian
-  sudo pacman -S papirus-icon-theme    # Arch
-  ```
-- Set the icon theme in `~/.config/rofi/config.rasi`
-
-[![Papirus Icons](https://img.shields.io/badge/Download-Papirus_Icons-blue?style=flat)](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+Install Papirus icon theme:
+```bash
+sudo dnf install papirus-icon-theme      # Fedora
+sudo pacman -S papirus-icon-theme        # Arch
+sudo apt install papirus-icon-theme      # Debian/Ubuntu
+```
 
 </details>
 
 <details>
-<summary><b>🎨 Rofi looks different than expected</b></summary>
+<summary><b>🪟 Window mode doesn't work on Hyprland</b></summary>
 
-- Make sure you copied the config to the correct location: `~/.config/rofi/config.rasi`
-- Check for syntax errors: `rofi -dump-config`
-
-</details>
-
-<details>
-<summary><b>📱 Applications don't show up</b></summary>
-
-- Update desktop database: `update-desktop-database ~/.local/share/applications`
-- Check if `.desktop` files exist in `/usr/share/applications`
+Make sure you're using `rofi-wayland` and not the X11 build of rofi.
 
 </details>
-
-<details>
-<summary><b>🪟 Window mode doesn't work</b></summary>
-
-- Ensure you're running a compositor (required for window previews)
-- Try: `rofi -show window` manually to test
-
-</details>
-
-[![Get Help](https://img.shields.io/badge/Get-Help-red?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
-
-<div align="center">
+Contributions are welcome!
 
 [![Report Bug](https://img.shields.io/badge/🐛_Report-Bug-red?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 [![Request Feature](https://img.shields.io/badge/💡_Request-Feature-blue?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 [![Submit PR](https://img.shields.io/badge/📝_Submit-Pull_Request-success?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi/pulls)
 
-</div>
-
-- 🐛 Report bugs or issues
-- 💡 Suggest new features or improvements
-- 📸 Add screenshots (especially needed!)
-- 📝 Improve documentation
-- ⚙️ Submit optimized configurations
-
-**To contribute:**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-[![Fork Repo](https://img.shields.io/github/forks/Rudrakshsingh07/better-rofi?style=social)](https://github.com/Rudrakshsingh07/better-rofi/fork)
+Screenshots are especially needed — if you have a nice setup, open a PR!
 
 ---
 
 ## 📄 License
 
-This is free and unencumbered software released into the public domain.
-
-Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
-
-For more information, please refer to the [UNLICENSE](UNLICENSE) file or visit <https://unlicense.org/>
-
-[![The Unlicense](https://img.shields.io/badge/License-Unlicense-blue.svg?style=for-the-badge)](UNLICENSE)
+This is free and unencumbered software released into the public domain. See [UNLICENSE](UNLICENSE) for details.
 
 ---
 
 ## 🙏 Acknowledgments
 
-<div align="center">
-
-[![Rofi](https://img.shields.io/badge/Rofi-Project-FF6C37?style=flat&logo=linux)](https://github.com/davatorium/rofi)
-[![PowerToys](https://img.shields.io/badge/PowerToys-Inspiration-0078D4?style=flat&logo=windows)](https://github.com/microsoft/PowerToys)
-[![Linux](https://img.shields.io/badge/Linux-Community-FCC624?style=flat&logo=linux&logoColor=black)](https://www.linux.org/)
-
-</div>
-
-- [Rofi](https://github.com/davatorium/rofi) - The amazing application launcher this config is built on
-- [PowerToys Run](https://github.com/microsoft/PowerToys) - Inspiration for the workflow and UX
-- The Linux community for endless dotfile inspiration
-
----
-
-## ⭐ Show Your Support
-
-If this config made your workflow better, consider:
-
-<div align="center">
-
-[![Star Repo](https://img.shields.io/badge/⭐_Star-This_Repo-yellow?style=for-the-badge)](https://github.com/Rudrakshsingh07/better-rofi)
-[![Share](https://img.shields.io/badge/📢_Share-With_Others-blue?style=for-the-badge)](https://twitter.com/intent/tweet?text=Check%20out%20better-rofi%20-%20A%20PowerToys%20Run-inspired%20Rofi%20config!&url=https://github.com/Rudrakshsingh07/better-rofi)
-
-</div>
+- [Rofi](https://github.com/davatorium/rofi) — the launcher this config is built on
+- [matugen](https://github.com/InioX/matugen) — Material You color generation from wallpapers
+- [end-4/dots-hyprland](https://github.com/end-4/dots-hyprland) — wallpaper pipeline inspiration
+- [PowerToys Run](https://github.com/microsoft/PowerToys) — UX inspiration
 
 ---
 
@@ -483,8 +383,6 @@ If this config made your workflow better, consider:
 **Made with ❤️ for the Linux community**
 
 [![GitHub](https://img.shields.io/badge/GitHub-Rudrakshsingh07-181717?style=flat&logo=github)](https://github.com/Rudrakshsingh07)
-[![Report Bug](https://img.shields.io/badge/Report-Bug-red?style=flat)](https://github.com/Rudrakshsingh07/better-rofi/issues)
-[![Request Feature](https://img.shields.io/badge/Request-Feature-blue?style=flat)](https://github.com/Rudrakshsingh07/better-rofi/issues)
 
 ![Visitors](https://hits.sh/github.com/Rudrakshsingh07/better-rofi.svg?style=flat&label=visitors&color=blue)
 

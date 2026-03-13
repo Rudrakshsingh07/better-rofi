@@ -1,0 +1,84 @@
+@import "colors.rasi"
+
+* {
+    background-color:   transparent;
+    text-color:         @on-surface;
+    border:             0;
+    margin:             0;
+    padding:            0;
+    spacing:            0;
+}
+
+window {
+    background-color:   @surface;
+    border:             2px solid;
+    border-color:       @primary;
+    border-radius:      14px;
+    width:              680px;
+    padding:            16px 20px;
+}
+
+mainbox {
+    spacing:            12px;
+}
+
+inputbar {
+    background-color:   @surface-variant;
+    border-radius:      8px;
+    padding:            10px 14px;
+    spacing:            10px;
+    children:           [ entry ];
+}
+
+entry {
+    placeholder:        "Search applications...";
+    placeholder-color:  @on-surface-variant;
+    text-color:         @on-surface;
+}
+
+listview {
+    lines:              6;
+    scrollbar:          false;
+    spacing:            4px;
+}
+
+element {
+    border-radius:      8px;
+    padding:            8px 12px;
+    spacing:            10px;
+}
+
+element normal.normal {
+    background-color:   transparent;
+}
+
+element selected.normal {
+    background-color:   @primary-container;
+    text-color:         @on-primary-container;
+}
+
+element-icon {
+    size:               24px;
+}
+
+element-text {
+    vertical-align:     0.5;
+}
+
+modes {
+    background-color:   @surface-variant;
+    border-radius:      8px;
+    padding:            6px;
+    spacing:            4px;
+}
+
+button {
+    padding:            4px 14px;
+    border-radius:      6px;
+    text-color:         @on-surface-variant;
+}
+
+button selected {
+    background-color:   @primary;
+    text-color:         @on-primary;
+}

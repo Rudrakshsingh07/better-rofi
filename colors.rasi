@@ -1,0 +1,14 @@
+* {
+    primary:              #bec7d4;
+    on-primary:           #28313b;
+    primary-container:    #3f4852;
+    on-primary-container: #dae3f1;
+    secondary:            #c2c7cf;
+    on-secondary:         #2c3137;
+    surface:              #131314;
+    on-surface:           #e4e2e3;
+    surface-variant:      #474748;
+    on-surface-variant:   #c8c6c7;
+    background:           #131314;
+    on-background:        #e4e2e3;
+}
